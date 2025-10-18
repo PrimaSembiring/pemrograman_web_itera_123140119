@@ -13,14 +13,16 @@ Filter Status	enampilkan hanya tugas “Selesai”, “Belum Selesai”, atau se
 Penyimpanan Otomatis	Semua data tersimpan otomatis di browser menggunakan localStorage. 
 
 Model menambah catatan tugas
- 
+![Tambah Tugas](assets/Menambah.png)
 
 Tampilan tugas yang sudah selesai/blm selesai
- 
+![Tampilan Semua](assets/Tampilan%20Semua.png)
+![Tampilan Selesai](assets/Tampilan%20Selesai.png)
 
  
 
 Tampilan menhapus tugas
+![Menghapus Tugas](assets/Menghapus.png)
  
     
 Cara Menjalankan Aplikasi
