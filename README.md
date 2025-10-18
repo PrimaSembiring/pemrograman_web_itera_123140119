@@ -41,6 +41,7 @@ Aplikasi ini adalah frontend murni dan sangat mudah dijalankan:
 **Penjelasan Tekniks**
 1.	Penggunaan `localStorage`
 Aplikasi ini menggunakan localStorage API dari JavaScript untuk menyimpan array objek tugas secara lokal di browser pengguna.
+
 | **Tujuan** | **Metode yang Digunakan** |
 |-------------|-----------------------------|
 | **Menyimpan** | `localStorage.setItem('tasks', JSON.stringify(tasks))` |
