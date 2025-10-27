@@ -1,122 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Manajemen Tugas</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Dashboard – ES6+</title>
 
-  <body>
-    <header>
-      <div class="container row center" style="justify-content: space-between">
-        <div class="brand">
-          <h1>Manajemen Tugas</h1>
-        </div>
-        <div class="counter">
-          <span>Tugas belum selesai:</span>
-          <span class="pill" id="pendingCount">0</span>
-        </div>
-      </div>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="topbar">
+      <h1> To-Do List</h1>
+      <span id="timePill" class="pill">Memuat waktu...</span>
     </header>
 
-    <main class="container">
-      <div class="grid">
-        <!-- === FORM TAMBAH / EDIT TUGAS === -->
-        <section class="card">
-          <div class="content">
-            <h2 id="formTitle">Tambah / Edit Tugas</h2>
-            <form id="taskForm" novalidate>
-              <input type="hidden" id="taskId" />
+    <div class="input-bar">
+      <input id="taskInput" type="text" placeholder="Tulis tugas..." />
+      <button id="addBtn">Tambah</button>
+    </div>
 
-              <div class="row wrap">
-                <div class="field">
-                  <label for="title">Nama Tugas</label>
-                  <input
-                    class="input"
-                    id="title"
-                    placeholder="Contoh: Laporan Praktikum Jaringan"
-                    required
-                  />
-                  <div class="error" id="errTitle"></div>
-                </div>
+    <div class="total-card">
+      <p>Total Item</p>
+      <h2 id="totalTasks">0</h2>
+    </div>
 
-                <div class="field">
-                  <label for="course">Mata Kuliah</label>
-                  <input
-                    class="input"
-                    id="course"
-                    placeholder="Contoh: Pemrograman Web"
-                    required
-                  />
-                  <div class="error" id="errCourse"></div>
-                </div>
-              </div>
+    <ul id="taskList"></ul>
+    <div id="emptyState" class="empty">Yayyy tugas g ada bisa turu</div>
+  </div>
 
-              <div class="field">
-                <label for="deadline">Deadline</label>
-                <input class="input" type="date" id="deadline" required />
-                <div class="error" id="errDeadline"></div>
-              </div>
-
-              <div class="row" style="justify-content: flex-end">
-                <button type="button" class="btn ghost" id="btnCancel" hidden>
-                  Batalkan
-                </button>
-                <button class="btn primary" id="btnSubmit">Tambah Tugas</button>
-              </div>
-            </form>
-          </div>
-        </section>
-
-        <!-- === DAFTAR TUGAS === -->
-        <section class="card">
-          <div class="content">
-            <div class="row wrap center" style="justify-content: space-between">
-              <h2>Daftar Tugas</h2>
-              <div class="row toolbar wrap">
-                <input
-                  class="input"
-                  id="searchTask"
-                  placeholder="Cari tugas berdasarkan nama…"
-                />
-                <select id="status" class="input">
-                  <option value="all">Semua Status</option>
-                  <option value="active">Belum Selesai</option>
-                  <option value="done">Selesai</option>
-                </select>
-                <button id="clearCompleted" class="btn ghost">
-                  Bersihkan Selesai
-                </button>
-              </div>
-            </div>
-
-            <div id="stats" class="stats"></div>
-            <div id="taskList" class="list"></div>
-            <div class="empty" id="emptyState" hidden>Belum ada tugas.</div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <!-- === TEMPLATE ITEM TUGAS === -->
-    <template id="taskItemTemplate">
-      <article class="task" data-id="">
-        <div class="check"><input type="checkbox" /></div>
-        <div class="task-main">
-          <h3 class="task-title"></h3>
-          <div class="task-meta">
-            <span class="badge"></span>
-            <span class="deadline"></span>
-          </div>
-        </div>
-        <div class="task-actions">
-          <button class="btn ghost edit" title="Edit tugas">✏️</button>
-          <button class="btn danger remove" title="Hapus tugas">🗑️</button>
-        </div>
-      </article>
-    </template>
-
-    <script src="script.js"></script>
-  </body>
+  <script type="module" src="./js/main.js"></script>
+</body>
 </html>
