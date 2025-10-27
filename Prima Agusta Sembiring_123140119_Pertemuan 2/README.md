@@ -52,8 +52,6 @@ meskipun halaman direfresh atau browser ditutup.
 
 ## Screenshot Aplikasi**
 
-## Screenshot Aplikasi
-
 ### Tampilan Awal
 ![Tampilan Awal](./assets/tampilan%20awal.png)
 
