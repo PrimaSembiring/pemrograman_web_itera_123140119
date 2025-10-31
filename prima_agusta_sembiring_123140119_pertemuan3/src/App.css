@@ -1,0 +1,236 @@
+/* === RESET & THEME BASE === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background-color: #121814;
+  color: #e9f2ec;
+  margin: 0;
+}
+
+/* === NAVBAR === */
+nav {
+  background: linear-gradient(90deg, #162119, #1e2d24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3dd68c;
+  letter-spacing: 0.5px;
+}
+
+nav .links a {
+  color: #c7d6ce;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav .links a:hover {
+  color: #3dd68c;
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #1f2a24;
+  border-radius: 14px;
+  padding: 35px 50px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* === FORM TAMBAH BUKU === */
+form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.2fr auto;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+input, select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #2d3b33;
+  background-color: #0f1612;
+  color: #e9f2ec;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #3dd68c;
+  outline: none;
+  background-color: #17241e;
+}
+
+button {
+  border: none;
+  background-color: #2ea567;
+  color: #f3f8f6;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #36c47a;
+  transform: translateY(-1px);
+}
+
+/* === FILTER === */
+.filter-section {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cddfd7;
+}
+
+.filter-section select {
+  width: 200px;
+}
+
+/* === LIST BUKU === */
+.book-card {
+  background-color: #18221d;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  border: 1px solid #2e3d35;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.15s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  border-color: #3dd68c50;
+}
+
+.book-info strong {
+  font-size: 16px;
+  color: #f6fff9;
+}
+
+.book-info small {
+  display: block;
+  color: #9baea5;
+}
+
+.book-info span {
+  font-size: 13px;
+  color: #89b79a;
+}
+
+.book-actions button {
+  background-color: #e63946;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.book-actions button:hover {
+  background-color: #c92a36;
+}
+
+/* === STATISTIK === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stats-box {
+  background-color: #18231e;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid #2e3d35;
+  color: #d7e9e1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stats-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+}
+
+.stats-box span {
+  display: block;
+  font-size: 26px;
+  color: #3dd68c;
+  margin-top: 8px;
+}
+
+/* === JUDUL === */
+h1, h2 {
+  color: #e3f2e8;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #3dd68c;
+  margin-top: 6px;
+  border-radius: 3px;
+}
+
+/* === SEARCH BAR === */
+.search-bar {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 40px 12px 45px;
+  border-radius: 10px;
+  border: 1px solid #2e3d35;
+  background-color: #101a15;
+  color: #e9f2ec;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input::placeholder {
+  color: #9baea5;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #3dd68c;
+  box-shadow: 0 0 10px rgba(61, 214, 140, 0.3);
+  background-color: #17241e;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #3dd68c;
+  opacity: 0.8;
+}
+
