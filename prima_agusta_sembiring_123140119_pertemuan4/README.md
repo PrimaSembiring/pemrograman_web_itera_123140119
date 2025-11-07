@@ -125,8 +125,8 @@ jupyter notebook
 
 ### **Sebelum Input Data Baru**
 File Excel berisi data awal 10 mahasiswa:
-![Data Awal](assets/0b4cdf4e-b260-4c8d-84b9-a0afb5ca5065.png)
+![Data Awal](assets/data_awal.png)
 
 ### **Setelah Input Data Baru**
 Setelah menjalankan program dan menambah dua mahasiswa baru (`Sugeng` dan `Tongat`), file Excel otomatis diperbarui seperti berikut:
-![Data Setelah Update](assets/6af67436-a79e-4fa0-b313-cd2e2ac5efa5.png)
+![Data Setelah Update](assets/data_update.png)
