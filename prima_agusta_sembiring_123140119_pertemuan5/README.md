@@ -73,10 +73,10 @@ python library.py
 Contoh output:
 
 Screenshot Input Program
-![Input](D:/Praktikum Pengweb/Prima Agusta Sembiring_123140119/prima_agusta_sembiring_123140119_pertemuan5/ss/input.png)
+![Input](ss/input.png)
 
 Screenshot Output Program
-![Output](D:/Praktikum Pengweb/Prima Agusta Sembiring_123140119/prima_agusta_sembiring_123140119_pertemuan5/ss/output.png)
+![Output](ss/output.png)
 
 ---
 
