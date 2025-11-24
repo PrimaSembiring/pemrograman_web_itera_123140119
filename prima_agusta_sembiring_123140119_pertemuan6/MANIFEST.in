@@ -1,0 +1,1 @@
+recursive-include application *.ini *.rst *.txt *.py
